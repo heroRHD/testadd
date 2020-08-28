@@ -4,7 +4,7 @@ export default class index extends Component {
     render() {
         return (
             <div>
-                404
+                找不到文件了
             </div>
         )
     }
