@@ -1,0 +1,91 @@
+.ultitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.defaultul {
+    list-style: none;
+    width: 100%;
+
+    .defaultli {
+        color: black;
+        padding: 0 3px;
+        display: inline-block;
+
+        &:not(:first-child) {
+            margin-left: 5px;
+        }
+
+        border-radius: 4px 4px 4px 4px;
+
+        &:hover {
+            background-color: #eeeeee;
+            color: #0072b4;
+        }
+    }
+
+
+    .checkedCity {
+        background-color: #0072b4;
+        color: white;
+
+        &:hover {
+            background-color: #0072b4;
+            color: white;
+        }
+    }
+}
+
+:global {
+    .searchbar {
+        padding: 18px 15px;
+        background-color: white;
+        .ant-form-item {
+            margin: 0;
+        }
+
+    }
+}
+
+.resultitem{
+    margin-top: 20px;
+    // background-color: white;
+    // padding: 15px;
+}
+
+.footer{
+    padding: 15px;
+    padding-bottom: 0;
+    .footerleft{
+        float: left;
+        width: 90%;
+        .title{
+            margin: 0 20px 0 0;
+        }
+        .content{
+            margin-left: 15px;
+            font-weight: normal;
+            font-size: 12px;
+        }
+
+    }
+    .footerright{
+        width: 10%;
+        float: right;
+        text-align: center;
+        .mywechat{
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    .footerbottom{
+        clear: both;
+        color: white;
+        text-align: center;
+        .pagedesc{
+             margin-bottom: 0;
+        }
+       
+    }
+}

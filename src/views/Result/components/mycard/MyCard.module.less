@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.cardcontainer {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 3px 20px #eaeaea;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        box-shadow: 0 3px 20px #cfcbcb;
+    }
+
+    .cardheader {
+        padding: 6px 16px;
+        border-bottom: 1px solid #ddd;
+        justify-items: center;
+        overflow: hidden;
+        /*超出部分隐藏*/
+        white-space: nowrap;
+        /*不换行*/
+        text-overflow: ellipsis;
+        /*超出部分文字以...显示*/
+
+        .companyname {
+            font-size: 16px;
+            font-weight: bold;
+            height: 24px;
+            margin: 0;
+        }
+
+    }
+
+    .cardbody {
+        padding: 6px 16px;
+        font-size: 12px;
+
+        .bodytop {
+            display: flex;
+
+            .country {
+                flex: 1;
+
+                .logo {
+                    width: 40px;
+                }
+
+                .countryname {
+                    margin-left: 10px;
+                }
+
+            }
+
+            .transporticon {
+                flex: 2;
+                margin: 0 20px;
+                text-align: center;
+            }
+        }
+
+        .bodybottom {
+            display: flex;
+            margin-top: 5px;
+
+            .bottomitem {
+                flex: 2;
+
+            }
+
+            .emphasis {
+                font-weight: bolder;
+            }
+
+            .homepick {
+                color: #0072b4;
+            }
+
+            .bottomitem1 {
+                flex: 1;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,89 @@
+@themeColor: #0072b4;
+
+.frame_box {
+	display: flex;
+	flex-direction: column;
+	background-color: #f2f3f7;
+}
+.head_bar {
+	display: flex;
+	width: 100%;
+	height: 90px;
+	justify-content: center;
+	background-color: #ffffff;
+	box-shadow: 0 1px 5px #bdc3c7;
+}
+.head_bar_content {
+	display: flex;
+	width: 1200px;
+	height: 100%;
+	justify-content: space-between;
+}
+.head_bar_logo_box {
+	display: flex;
+	width: 300px;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.head_bar_logo_img {
+	align-self: flex-end;
+	margin: 0 0 5px;
+	max-width: 100%;
+	max-height: 100%;
+}
+.head_bar_user_box {
+	display: flex;
+	width: 300px;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.head_bar_user_badge {
+	align-self: flex-end;
+	margin: 0 0 10px;
+	cursor: pointer;
+}
+.head_bar_user_avatar {
+	background-color: @themeColor;
+}
+// 弹出式组件不要用嵌套
+.dropdown_menu {
+	padding: 20px 0 0;
+	margin-top: 6px;
+}
+.dropdown_menu_head {
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 70px 28px;
+	color: #000;
+}
+.dropdown_menuitem {
+	// width: 100% !important;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17.5px;
+	padding: 0;
+	font-weight: 500;
+	background-color: #eaeaea;
+	text-align: center;
+	color: @themeColor;
+}
+.dropdown_signUp_btn {
+	padding: 0;
+	font-size: 17.5px;
+	border: none;
+	background-color: #eaeaea;
+}
+.head_bar_tool_menu {
+	border: none;
+	align-self: flex-end;
+	margin: 0 0 15px 22px;
+}
+.head_bar_tool_menuitem {
+	margin: 0 0 0 10px;
+	padding: 0 1px;
+	font-size: 16px;
+	height: 40px;
+	color: @themeColor;
+}
